@@ -1,1 +1,2 @@
-# curso-em-v-deo-js
+# 💻 Curso de JavaScript 💻
+### Ministrado por Gustavo Guanabara
