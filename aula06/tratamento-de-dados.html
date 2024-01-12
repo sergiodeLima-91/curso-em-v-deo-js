@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Configurações da Página-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeiro Exercício</title>
+        
+        <style>
+            body {
+                background-color: aquamarine;
+                font: normal 15pt Arial;
+            }
+
+            h1 {
+                width: 236px;
+                height: 45px;
+                color: white;
+                box-shadow: 12px 13px 16px black;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+
+        </style>
+    </head>
+    <!--Conteúdo da Página-->
+    <body>
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição.</p>
+        
+        <script>
+            var nome = window.prompt('Diz ai: qual é seu nome?');
+            // Obs: Comando window.prompt retorna esencialmente uma string independente do tipo primitivo pre estaelecido! 
+            window.alert(`Prazer em te conhecer, ${nome}!`)
+            var numero1 = Number.parseInt(window.prompt('Digite um número: '))       
+            var numero2 = Number.parseInt(window.prompt('Digite outro número: '))       
+            // Number.parseInt(numero1)
+            // Number.parseInt(numero2)
+            var soma = numero1 + numero2
+            window.alert('A soma entre dois números é ' + soma)       
+        </script>
+    </body>
+</html>
