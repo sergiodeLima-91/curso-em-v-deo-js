@@ -21,25 +21,24 @@
                 border-radius: 5px;
                 padding: 5px;
             }
-
-
         </style>
     </head>
     <!--Conteúdo da Página-->
     <body>
         <h1>Olá, mundo!</h1>
         <p>Já me livrei da maldição.</p>
+
         
         <script>
             var nome = window.prompt('Diz ai: qual é seu nome?');
             // Obs: Comando window.prompt retorna esencialmente uma string independente do tipo primitivo pre estaelecido! 
             window.alert(`Prazer em te conhecer, ${nome}!`)
-            var numero1 = Number.parseInt(window.prompt('Digite um número: '))       
-            var numero2 = Number.parseInt(window.prompt('Digite outro número: '))       
-            // Number.parseInt(numero1)
-            // Number.parseInt(numero2)
-            var soma = numero1 + numero2
-            window.alert('A soma entre dois números é ' + soma)       
+            var idade = Number(window.prompt(`Quantos anos você tem?`))              
+            // Number.parseInt(numero)
+            // Number.parseInt()
+            var tamanho_nome = nome.length;
+            document.write(`Sua idade é ${idade}! `)
+            document.write(`Seu nome é ${nome} e ele tem ${tamanho_nome} letras!`)       
         </script>
     </body>
 </html>
