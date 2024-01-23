@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores</title>
     <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+        }
         img {
             border-radius: 10px; 
             box-shadow: 5px 5px 5px  black;
+        }
+
+        .ordem-execucao {
+            /* Tempo do Zomm */
+            transition: transform 1.2s ;
+        }
+
+        .ordem-execucao:hover {
+            /* Escala do Zomm */
+            transform: scale(1.1);
+        }
+
+        .operador-ternario {
+            /* Tempo do Zomm */
+            width: 800px;
+            height: 200px;
+            transition: transform 1.2s ;
+            
+        }
+
+        .operador-ternario:hover {
+            /* Escala do Zomm */
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -82,11 +112,11 @@
         </li>
         <div>
             <h4>Precedência dos Operadores (Aritméticos a Lógicos)</h4>
-            <img src="./assets/images/img1.png" alt="ordem de execução">
+            <img class="ordem-execucao" src="./assets/images/img1.png" alt="ordem de execução">
         </div><br>
         <li>Operador Ternário
             <br><br><strong style="color: brown;">Tem este nome porque reune três operandos e sempre o últimoa  ser executado na ordem de precedência!</strong><br><br>
-            <img src="./assets/images/img2.png" alt="Operador Ternário">
+            <img class="operador-ternario" src="./assets/images/img2.png" alt="Operador Ternário">
 
         </li>
     </ol>
