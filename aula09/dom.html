@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <h3>Conceito</h3>
+    <p>Modelo de objetos para documentos. Conjunto de objetos dentro do browser que conferem acesso aos componentes internos de seu website. Não funciona dentro do NODE, mas sim dentro do navegador.</p>
+
+    <h3>Árvore DOM (window)</h3>
+    <p>Dentro dele existem diversos outros <strong>objetos</strong>. São alguns deles:</p>
+        <ol>
+            <li>location: localização do site (URL)</li>
+            <li>document: documento atual. Dentro do document temos o HTML com dois childs (head e body)</li>
+            <li>history: histórico de navegação (?)</li>
+        </ol>
+
+        <h3>Navegando no DOM por Seleção de Elementos da Árvore:</h3>
+        <p>Podemos alterar e manipular os elementos (tags) do documento HTML através de seus elementos. Quais as formas de navegação?</p>
+        <ol>
+            <li>Por MARCA - getElementsByTagName()</li>
+            <li>Por ID - getElementById()</li>
+            <li>Por Nome - getElementsByName()</li>
+            <li>Por Classe - getElementByClassName()</li>
+            <li>Por MARCA - getElementByTagName()</li>
+        </ol>
+
+        <script>
+            var exemploDeSelecaoPorID = document.getElementsByTagName('p')[1] /* O zero significa a primeira ocorrência da TAG <p>. */
+                window.document.write('Exemplo de seleção  por nome da tag com InnerText: ' + exemploDeSelecaoPorID.innerText)
+                window.document.write('<br>Exemplo de seleção  por nome da tag com InnerHTML: ' + exemploDeSelecaoPorID.innerHTML)
+        </script>
+
+        <p>Perceba que no segundo exemplo a palavra objeto veio em negrito, exatamente como esta no segundo parágrafo. Isso porque                 INNER TEXT pega o texto sem as tags filhas e formatações,mas o
+            INNER HTML pega todo o texto HTML.</p>
+    
+</body>
+</html>
