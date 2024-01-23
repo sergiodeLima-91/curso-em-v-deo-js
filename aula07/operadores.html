@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores</title>
+    <style>
+        img {
+            border-radius: 10px; 
+            box-shadow: 5px 5px 5px  black;
+        }
+    </style>
 </head>
 <body>
     <h1>Operadores:</h1>
     <ol>
-        <li>Aritméticos (Binários: Precisam de Dois Operandos)
+        <li>Aritméticos (Binários: Precisam de Dois Operandos):
             <ul>
                 <li>Soma (+)</li>
                 <li>Subtração (-)</li>
@@ -27,22 +33,62 @@
    
             </ol>
             <br>
-            <h4>Auto-atribuições:</h4>
-            <p>Ocorre quando o resultado de determinada operação realizada com uma variável é colocado dentro desta mesma variável</p>
-            <br>
-            <h4>Operadores de Incremento</h4>
-            <p>Outra forma de escrever o "n += 1" (independente do operador).</p>
-            <ul>
-                <li><strong>++ n:</strong> Incremento é aplicado ANTES</li>
-                <li><strong>n ++:</strong> Incremento é aplicado DEPOIS</li>
-            </ul>
+            <li>Atribuição:
+                <h4>Auto-atribuições:</h4>
+                <p>Ocorre quando o resultado de determinada operação realizada com uma variável é colocado dentro desta mesma variável</p>
+                <br>
+                <h4>Operadores de Incremento</h4>
+                <p>Outra forma de escrever o "n += 1" (independente do operador).</p>
+                <ul>
+                    <li><strong>++ n:</strong> Incremento é aplicado ANTES</li>
+                    <li><strong>n ++:</strong> Incremento é aplicado DEPOIS</li>
+                </ul>
+            </li>
+  
 
         </li>
         <br>
-        <li>Atribuição</li>
-        <li>Relacionais</li>
-        <li>Lógicos</li>
-        <li>Operador Ternário</li>
+        
+        <li>Relacionais:
+            <br><br>
+            <strong style="color: brown;">Não tem ordem de precedência!</strong><br><br>
+            <ul>
+                <li>MAIOR que (>)</li>
+                <li>MENOR que (<)</li>
+                <li>Maior ou Igual a (>=)</li>
+                <li>Menor ou Igual a  (<=)</li>
+                <li>Igual a (==)</li>
+                <li>Diferente de (!=)</li>
+            </ul>
+            <br>
+        </li>
+        <h4>Operadores de Identidade (Igualdade restrita):</h4>
+            Valor e tipo precisam ser iguais para ser true!
+        <br><br>
+        <li>Lógicos
+            <br><br>
+            <ul>
+                <li>Negação ou NÃO (!) - ou true ou false!</li>
+                <li>Conjunção (&& - "e")</li>
+                <li>Disjunção ( || - "ou")</li>
+            </ul>
+            <h5>Ordem de Execução (caso apareça mais de um numa sentença)</h5>
+                    <ol>
+                        <li>Negação</li>
+                        <li>Conjunção</li>
+                        <li>Disjunção</li>
+                    </ol>
+                    <br>
+        </li>
+        <div>
+            <h4>Precedência dos Operadores (Aritméticos a Lógicos)</h4>
+            <img src="./assets/images/img1.png" alt="ordem de execução">
+        </div><br>
+        <li>Operador Ternário
+            <br><br><strong style="color: brown;">Tem este nome porque reune três operandos e sempre o últimoa  ser executado na ordem de precedência!</strong><br><br>
+            <img src="./assets/images/img2.png" alt="Operador Ternário">
+
+        </li>
     </ol>
 </body>
 </html>
