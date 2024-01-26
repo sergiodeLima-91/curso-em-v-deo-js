@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background-color: aqua;
+            width: 333px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+        }
+    </style>
 </head>
 <body>
-    <div id="area">
+
+    <h1>Eventos no DOM</h1>
+
+    <div id="area" onclick="clicouNaDiv()">
         Interaja
     </div>
+
+
+    <h2>Exemplo de Eventos</h2>
+    <p>Alguns eventos podem ocorrer em relação a tag "div" acima. Como, por exemplo, os eventos de mouse. Alguns são:</p>
+    <ol>
+        <li>MOUSEENTER: Quando o cursor do mouse entra dentro das delimitações da "div" acima</li>
+        <li>MOUSEMOVE: Quando o cursor do mouse continua movendo-se dentro da "div" acima</li>
+        <li>CLICK: Apertar e soltar botão do mouse rapidamente dentro da div</li>
+        <li>MOUSEOUT: Mover o mouse para fora da div</li>
+        <li>MOUSEDOWIN: Quando o cursor do mouse é clicado e é mantido pressionado dentro da "div" acima</li>
+        <li>MOUSEUP: Quando o cursor do mouse é solto</li>
+    </ol>
+
+    <h2>Funções em JS</h2>
+    <p>As funções em JS são um conjunto de linhas que só são executadas quando um evento é disparado.</p>
+
+    <script>
+        /* Lista de Eventos  */
+        /* Click na div */
+        function clicouNaDiv(){
+            var corFonte = window.document.getElementById('area')
+            corFonte.style.color = 'blue'
+        }
+
+        function passouMouseNaDiv() {
+            alert('Você passou o mouse dentro da div!')
+        }
+
+        function moveuOMouse() {
+            alert('Você moveu o mouse dentro da div!')
+        }
+
+        function entrouESaiu() {
+            alert('Você entrou e depois saiu da div!')
+        }
+
+        function mantevePressionado() {
+            alert('Você manteve o mouse pressionado!')
+        }
+
+        function pressionouESoltou() {
+            alert('Você pressionou e depois soltou o mouse!')
+        }
+
+    </script>
 </body>
 </html>
