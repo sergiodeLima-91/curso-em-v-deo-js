@@ -13,15 +13,27 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 8px black;
             
         }
+
+        .code {
+            background-color: #cec9c9;
+            width: 375px;
+            height: 75px;
+            padding: 16px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 8px rgb(114, 113, 113);
+        }
+        
     </style>
 </head>
 <body>
 
     <h1>Eventos no DOM</h1>
 
-    <div id="area" onclick="clicouNaDiv()">
+    <div id="area" onclick="clicouNaDiv()" onmouseenter="entrou()" onmouseout="saiu()">
         Interaja
     </div>
 
@@ -33,39 +45,49 @@
         <li>MOUSEMOVE: Quando o cursor do mouse continua movendo-se dentro da "div" acima</li>
         <li>CLICK: Apertar e soltar botão do mouse rapidamente dentro da div</li>
         <li>MOUSEOUT: Mover o mouse para fora da div</li>
-        <li>MOUSEDOWIN: Quando o cursor do mouse é clicado e é mantido pressionado dentro da "div" acima</li>
+        <li>MOUSEDOWN: Quando o cursor do mouse é clicado e é mantido pressionado dentro da "div" acima</li>
         <li>MOUSEUP: Quando o cursor do mouse é solto</li>
     </ol>
 
     <h2>Funções em JS</h2>
     <p>As funções em JS são um conjunto de linhas que só são executadas quando um evento é disparado.</p>
 
+    <h2>EventListener</h2>
+
+    <p>Uma maneira de não poluir o código e registrar todo e qualquer evento de clique é através do EventListener. É uma espécie de "ouvidor" que fica na expectativa de ocorrência do evento especificado (clique, passar o mouse por cima, etc).</p>
+
+    <p>Exemplo</p>
+    
+    <div class="code">
+
+        <code >
+            var evento = window.document.getElementById('area')<br>
+            evento.addEventListener('cllck', clicar())<br>
+            evento.addEventListener('mouseenter', entrou())<br>
+            evento.addEventListener('mouseout', saiu())<br>
+        </code>
+
+    </div>
+    
+
     <script>
         /* Lista de Eventos  */
         /* Click na div */
+
+        var evento = window.document.getElementById('area')
+
         function clicouNaDiv(){
-            var corFonte = window.document.getElementById('area')
-            corFonte.style.color = 'blue'
+            evento.innerText = 'Clicou'
+            evento.style.background = 'red'
         }
 
-        function passouMouseNaDiv() {
-            alert('Você passou o mouse dentro da div!')
+        function entrou() {
+            evento.innerText = 'Entrou'
         }
 
-        function moveuOMouse() {
-            alert('Você moveu o mouse dentro da div!')
-        }
-
-        function entrouESaiu() {
-            alert('Você entrou e depois saiu da div!')
-        }
-
-        function mantevePressionado() {
-            alert('Você manteve o mouse pressionado!')
-        }
-
-        function pressionouESoltou() {
-            alert('Você pressionou e depois soltou o mouse!')
+        function saiu() {
+            evento.innerText = 'Saiu'
+            evento.style.background = 'aqua'
         }
 
     </script>
