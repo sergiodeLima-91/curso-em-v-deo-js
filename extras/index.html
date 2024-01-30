@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando Cor da Página</title>
+     <style>
+        .mudarCor {
+            background-color: aquamarine;
+        }
+        
+        #button {
+            border-radius: 5px;
+            margin-left: 5px;
+            transition: transform 0.2s;
+        }
+
+        #button:hover {
+            transform: scale(1.2);
+            box-shadow: 3px 3px 5px black;
+        }
+
+     </style>
+</head>
+<body id="corpo">
+    <input type="button" value="Mudar Cor" name="Botão Muda Cor" id="button">
+
+    <script>
+        /* Selecionando o elemento para ativar estilização (botão) */
+        const botao = document.getElementById("button");
+
+        /* Adicionando evento de clique pela escuta: */
+        botao.addEventListener("click", function() {
+            /* Selecionando o elemento que desejo estilizar (body) pela ativação por clique
+            do outro elemento (um botão, no caso) */
+            const elementoParaEstilizar = document.getElementById("corpo");
+            /* Adicionando a classe que ativa a estilização no body pelo evento de clique */
+            elementoParaEstilizar.classList.add("mudarCor");
+        })
+
+    </script>
+</body>
+</html>
