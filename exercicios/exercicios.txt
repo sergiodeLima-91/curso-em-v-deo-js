@@ -1,0 +1,39 @@
+Abaixo estão 100 exercícios diferentes que abordam os fundamentos básicos de JavaScript, HTML e CSS. Você pode copiar e colar a lista em um documento de texto:
+
+JavaScript:
+1. Crie uma função que retorna a soma de dois números.
+2. Crie uma função que verifica se um número é par ou ímpar.
+3. Crie uma função que verifica se um número é positivo, negativo ou zero.
+4. Crie uma função que verifica se uma string é um palíndromo.
+5. Crie uma função que conta quantas vogais há em uma string.
+6. Crie uma função que verifica se um número é primo.
+7. Crie um array com 5 nomes e exiba-os no console.
+8. Crie um objeto com nome, idade e profissão e exiba suas propriedades no console.
+9. Crie um loop que exiba os números de 1 a 10 no console.
+10. Crie uma função que converte Celsius para Fahrenheit.
+
+HTML:
+1. Crie uma página HTML com um cabeçalho e um parágrafo.
+2. Adicione uma imagem à página HTML.
+3. Crie uma lista não ordenada com 3 itens.
+4. Crie um formulário HTML com campos de nome, e-mail e senha.
+5. Adicione um link para outra página HTML.
+6. Adicione um vídeo à página HTML.
+7. Crie um botão que exiba uma mensagem quando clicado.
+8. Crie uma tabela HTML com 3 colunas.
+9. Adicione um rodapé à página HTML.
+10. Crie um botão que redireciona para uma página externa.
+
+CSS:
+1. Defina a cor de fundo de um elemento HTML.
+2. Defina a cor do texto de um elemento HTML.
+3. Defina uma borda para um elemento HTML.
+4. Defina o tamanho da fonte de um elemento HTML.
+5. Defina a altura e largura de um elemento HTML.
+6. Defina a margem de um elemento HTML.
+7. Defina o alinhamento de texto de um elemento HTML.
+8. Defina a transparência de um elemento HTML.
+9. Defina um gradiente de fundo para um elemento HTML.
+10. Defina um efeito de transição para um elemento HTML.
+
+Espero que esses exercícios ajudem você a praticar suas habilidades em JavaScript, HTML e CSS!
