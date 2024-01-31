@@ -53,8 +53,9 @@
     </div>  
 
     <script>
-        /* Selecionando o elemento para ativar estilização (botão) */
         var cores = ['aquamarine','red','blue','purple', 'chocolate'];
+        var contador = 0;
+        /* Selecionando o elemento para ativar estilização (botão) */
         const botao = document.getElementById("button");
 
         /* Adicionando evento de clique pela escuta: */
@@ -62,16 +63,11 @@
             /* Selecionando o elemento que desejo estilizar (body) pela ativação por clique
             do outro elemento (um botão, no caso) */
             const elementoParaEstilizar = document.getElementById("corpo");
-
-            for (let contador = 0; contador < cores.length; contador++) {
-                setTimeout(function() {
-                    /* Para remover a classe anterior para que a seguinte seja aplicada */
-                    elementoParaEstilizar.className = ""
-                /* Adicionando a classe que ativa a estilização no body pelo evento de clique */
-                elementoParaEstilizar.classList.add(cores[contador]);
-            }, 1000 * contador);
-        }
-                
+            elementoParaEstilizar.classList.add(cores[contador]);
+            contador++
+            if (contador == 6) {
+                alert('FIM! Reinicie a página para mudar novamente! 😁')
+            }                
     });
     </script>
 
