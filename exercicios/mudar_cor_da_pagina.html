@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mudando Cor da Página</title>
      <style>
-        .mudarCor {
+
+        #container-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .aquamarine {
             background-color: aquamarine;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .chocolate {
+            background-color: chocolate;
         }
         
         #button {
+            width: 80px;
+            height: 20px;
             border-radius: 5px;
             margin-left: 5px;
             transition: transform 0.2s;
@@ -23,10 +48,13 @@
      </style>
 </head>
 <body id="corpo">
-    <input type="button" value="Mudar Cor" name="Botão Muda Cor" id="button">
+    <div id="container-button">
+        <input type="button" value="Mudar Cor" name="Botão Muda Cor" id="button">
+    </div>  
 
     <script>
         /* Selecionando o elemento para ativar estilização (botão) */
+        var cores = ['aquamarine','red','blue','purple', 'chocolate'];
         const botao = document.getElementById("button");
 
         /* Adicionando evento de clique pela escuta: */
@@ -34,10 +62,18 @@
             /* Selecionando o elemento que desejo estilizar (body) pela ativação por clique
             do outro elemento (um botão, no caso) */
             const elementoParaEstilizar = document.getElementById("corpo");
-            /* Adicionando a classe que ativa a estilização no body pelo evento de clique */
-            elementoParaEstilizar.classList.add("mudarCor");
-        })
 
+            for (let contador = 0; contador < cores.length; contador++) {
+                setTimeout(function() {
+                    /* Para remover a classe anterior para que a seguinte seja aplicada */
+                    elementoParaEstilizar.className = ""
+                /* Adicionando a classe que ativa a estilização no body pelo evento de clique */
+                elementoParaEstilizar.classList.add(cores[contador]);
+            }, 1000 * contador);
+        }
+                
+    });
     </script>
+
 </body>
 </html>
