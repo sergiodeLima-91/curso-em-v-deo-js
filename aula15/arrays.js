@@ -4,5 +4,5 @@ Array (vetor ou variável composta) é uma variável com vários elementos compo
 
 */
 
-let numeros = [1,2,3,'B',5];
+let numeros = [1,2,3,'B',5,6];
 console.log(`O vetor é ${numeros}`)
