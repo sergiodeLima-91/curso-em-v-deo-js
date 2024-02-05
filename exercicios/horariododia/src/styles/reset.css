@@ -1,12 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-#credits {
-    text-align: center; 
-    padding-top: 10px;
-    font: normal 10pt Arial; 
-    font-style: italic; 
-    font-weight: bold;
-}
