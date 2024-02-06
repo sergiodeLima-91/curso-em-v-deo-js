@@ -1,0 +1,51 @@
+*{
+    background-color: rgb(104, 104, 241);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font: normal 25pt Arial;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 10pt Arial;    
+}
+
+#data {
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    min-width: 450px;
+    min-height: 350px;
+    text-align: left;
+}
+
+#age-input {
+    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 18px;
+}
+
+#sex {
+    margin-top: 10px;
+    display: flex;
+    background: none
+
+}
+#mas {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#fem {
+    margin-left: 10px;
+    margin-right: 10px;
+}
