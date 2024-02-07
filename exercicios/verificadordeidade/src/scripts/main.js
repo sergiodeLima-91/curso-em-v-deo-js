@@ -1,7 +1,8 @@
-var texto = document.getElementById("results");
+var results = document.getElementById("results");
 var button = document.getElementById("button");
-var image = document.getAnimations("image");
+var teste = document.getElementById("img");
 
 button.addEventListener("click", function() {
-    button.classList.add("mostrar");
-})
+    results.classList.add("hide-results");
+    teste.classList.remove("image");
+});
