@@ -38,9 +38,21 @@ h1 {
 #sex {
     margin-top: 15px;
     display: flex;
-    background: none
-
+    background: none;
 }
+
+#form-sex {
+    background: none;
+}
+
+label {
+    background: none;
+}
+
+#form-year {
+    background: none;
+};
+
 #mas {
     margin-left: 10px;
     margin-right: 5px;
