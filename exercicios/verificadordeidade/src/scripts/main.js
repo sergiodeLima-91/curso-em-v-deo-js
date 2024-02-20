@@ -28,10 +28,12 @@ function ageCalculation() {
 
 // Validação dos dados:
 var formYear = document.getElementById("form-year");
-button.addEventListener("submit", function noSendForm(event) {
+formYear.addEventListener("submit", function noSendForm(event) {
     // Verifica se o campo
     if (!formYear.checkValidity()) {
         alert("Por favor, preencha os campos obrigatórios!")
         event.preventDefault(); // Impede o envio do formulário
-    };
+    }else{
+        alert("Dados enviados!")
+    }
 });

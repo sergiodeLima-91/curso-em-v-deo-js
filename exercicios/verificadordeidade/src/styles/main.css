@@ -17,7 +17,7 @@ h1 {
     font: normal 10pt Arial;    
 }
 
-#data {
+#year-age {
     padding-top: 15px;
     padding-left: 10px;
     background-color: aliceblue;
@@ -27,7 +27,7 @@ h1 {
     text-align: left;
 }
 
-#age-input {
+#age{
     background: none;
     border: 1px solid black;
     border-radius: 3px;
@@ -36,16 +36,18 @@ h1 {
 }
 
 #sex {
-    margin-top: 15px;
     display: flex;
-    background: none;
-}
-
-#form-sex {
+    /* Para deixar tanto o Label quanto o input na mesma linha */
+    display: inline-block;
+    vertical-align: middle;
     background: none;
 }
 
 label {
+    background: none;
+}
+
+#year  {
     background: none;
 }
 

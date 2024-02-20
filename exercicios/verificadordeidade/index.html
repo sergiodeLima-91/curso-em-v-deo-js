@@ -15,27 +15,17 @@
     <h1>Verificador de Idade</h1>
 
     <section id="container">
-        <section id="data">
-            <form id="form-year">
-                <label for="ano">Ano de Nascimento:</label>
-                <input id="age-input" type="number">
+        <section id="year-age">
+            <form style="background: none;" id="form-1">
+                <label for="age" id="label-age">Ano de Nascimento</label>
+                <input type="number" name="year" id="age">
             </form>
-            <section id="sex"> 
-                <form id="form-sex">Sexo:
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="sexo" value="Masculino" required>
-
-                    <label for="feminino">Feminino</label>
-                    <input type="radio" name="sexo" value="Feminino" required>
-                </form>
-            </section>
-            <button type="button" id="button">Verificar</button>
-            <section id="results">Preencha os dados acima e veja o resultado.</section>
-            <div id="desc"></div>  
-            <div id="container-img">
-                <img src="./src/assets/images/mulher-20-a-40.jpg" id="img" class="image">
-            </div>
+            <form style="background: none; margin-top: 15px;" id="form-2">
+                <label for="sex">Sexo</label>
+                <input type="radio" name="sex-select" id="sex">
+            </form>
         </section>
+    </section>
  
 
     </section>
