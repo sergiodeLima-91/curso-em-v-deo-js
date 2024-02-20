@@ -8,11 +8,30 @@ var year_num = Number(year.value);
 // Criando variável para pegar ano atual pelo computador:
 var now = new Date();
 var currentYear = now.getFullYear();
-
+var sexo = '';
+var idade = '';
 
 // Acionando o resultado pelo evento de clique po escuta:
-button.addEventListener("click", function() {
+button.addEventListener("click", function showResults(){
     results.classList.add("hide-results");
     image.classList.remove("image");
-    description.innerHTML = `Idade ${currentYear - year.value}`;
+    description.innerHTML = `Sexo: ${sexDetection()} / Idade: ${ageCalculation()}`;
+});
+
+function sexDetection() {
+    return sexo = document.querySelector('input[name="sexo"]:checked').value;
+}
+
+function ageCalculation() {
+    return idade = currentYear - year.value;
+}
+
+// Validação dos dados:
+var formYear = document.getElementById("form-year");
+button.addEventListener("submit", function noSendForm(event) {
+    // Verifica se o campo
+    if (!formYear.checkValidity()) {
+        alert("Por favor, preencha os campos obrigatórios!")
+        event.preventDefault(); // Impede o envio do formulário
+    };
 });

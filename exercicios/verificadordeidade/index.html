@@ -16,15 +16,22 @@
 
     <section id="container">
         <section id="data">
-            Ano de Nascimento:
-            <input id="age-input" type="text">
+            <form id="form-year">
+                <label for="ano">Ano de Nascimento:</label>
+                <input id="age-input" type="number">
+            </form>
             <section id="sex"> 
-                Sexo:
-                <input type="radio" name="choice" id="mas">Masculino</form>
-                <input type="radio" name="choice" id="fem">Feminino</form>
+                <form id="form-sex">Sexo:
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" value="Masculino" required>
+
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="sexo" value="Feminino" required>
+                </form>
             </section>
             <button type="button" id="button">Verificar</button>
-            <section id="results">Preencha os dados acima e veja o resultado.</section>  
+            <section id="results">Preencha os dados acima e veja o resultado.</section>
+            <div id="desc"></div>  
             <div id="container-img">
                 <img src="./src/assets/images/mulher-20-a-40.jpg" id="img" class="image">
             </div>
