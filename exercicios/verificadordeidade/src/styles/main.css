@@ -10,20 +10,22 @@ h1 {
     color: aliceblue;
 }
 
-#container {
+#container-general {
     display: flex;
     justify-content: center;
     align-items: center;
-    font: normal 10pt Arial;    
+    font: normal 10pt Arial; 
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 5px;
+    min-width: 450px;
+    min-height: 145px;   
 }
 
 #year-age {
     padding-top: 15px;
     padding-left: 10px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    min-width: 450px;
-    min-height: 145px;
+    
     text-align: left;
 }
 
@@ -35,12 +37,19 @@ h1 {
     cursor: pointer;
 }
 
-#sex {
+.sex {
     display: flex;
     /* Para deixar tanto o Label quanto o input na mesma linha */
     display: inline-block;
     vertical-align: middle;
+    margin-top: -2px;
     background: none;
+}
+
+#sex-selection {
+    background: none;
+    margin-left: -250px;
+    margin-top: -125px;
 }
 
 label {
@@ -67,16 +76,29 @@ label {
     cursor: pointer;
 }
 
+
+#section-button {
+    background: none;
+}
+
 #button {
     background: rgb(214, 222, 240);
     padding: 2.8px;
     margin-top: 20px;
     border-radius: 3px;
     cursor: pointer;
+    transition: transform 0.5s;
+    margin-left: -220px;
 }
 
 #button:hover {
     color:brown;
+    transform: scale(1.2);
+}
+
+#footer-results {
+    background: none;
+    margin-left: -145px;
 }
 
 #results {
