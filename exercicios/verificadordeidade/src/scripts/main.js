@@ -6,6 +6,5 @@ var image = document.getElementById("img");
 // Evento de clique:
 button.addEventListener("click", function() {
     results.classList.add("hide-results");
-    image.classList.remove("image");
-
-})
+    image.classList.remove("hide-img");
+});
