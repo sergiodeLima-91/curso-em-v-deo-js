@@ -6,6 +6,7 @@ var year = document.getElementById("year");
 var sexMasc = document.getElementById("masc");
 var sexFem = document.getElementById("fem");
 var description = document.getElementById("description");
+var sex = '';
 
 // Calculo da Idade
 var now = new Date();
@@ -16,6 +17,11 @@ button.addEventListener("click", function(event) {
         event.preventDefault(); // Impede o envio do formulário para recarregar a página
         results.classList.add("hide-results");
         image.classList.remove("hide-img");
-        description.innerHTML = `Idade ${currentYear - year.value}`;
+        if(sexMasc.checked) {
+                sex = 'homem';
+        } else if(sexFem.checked) {
+                sex = 'mulher';
+        }
+        description.innerHTML = `Identificamos ${sex} de ${currentYear - year.value} anos`;
 
 });
